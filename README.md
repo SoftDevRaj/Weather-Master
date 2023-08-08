@@ -27,3 +27,6 @@ Mock-Up
 The following image shows the web application's appearance and functionality:
 
 The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.
+
+![image](https://github.com/SoftDevRaj/Weather-Master/assets/130394711/5e8fcdb9-8ece-4c91-ba5a-b4bcc6d49d7e)
+
