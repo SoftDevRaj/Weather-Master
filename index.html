@@ -22,7 +22,8 @@
             </div>
             <div class="control">
                 <!-- Search button -->
-                <button class="button is-info" onclick="fetchWeather(document.getElementById('cityInput').value)">Search</button>
+                <button class="button is-info"
+                    onclick="fetchWeather(document.getElementById('cityInput').value)">Search</button>
 
             </div>
         </div>
@@ -48,8 +49,27 @@
         </div>
     </div>
 
+    <!-- Current Weather Display -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">Current Weather</h1>
+            <div class="card" id="currentWeather">
+                <div class="card-content">
+                    <!-- Current weather data will be filled by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 5-day Forecast Display -->
-    <div class="m-5" id="forecast"></div>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">5-Day Forecast</h1>
+            <div class="columns" id="forecast">
+                <!-- 5-day forecast data in cards will be filled by JavaScript -->
+            </div>
+        </div>
+    </section>
 
     <script src="./JS/script.js"></script>
 
