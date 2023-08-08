@@ -1,16 +1,24 @@
 .custom-font {
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Larger screens (e.g., tablets) */
+@media screen and (min-width: 768px) {
+  .columns.is-multiline.is-justify-space-between {
+    justify-content: space-between;
   }
-  
-  /* trying my hand at responsive layouts
-  /* Tablets */
-  @media screen and (max-width: 992px) {
-      }
-    
-    /* Large smartphones */
-    @media screen and (max-width: 768px) {
-    }
-    
-    /* Small smartphones */
-    @media screen and (max-width: 576px) {
-    }
+}
+
+/* Medium screens (e.g., large smartphones) */
+@media screen and (max-width: 992px) {
+  .columns.is-multiline.is-justify-space-around {
+    justify-content: space-around;
+  }
+}
+
+/* Small screens (e.g., small smartphones) */
+@media screen and (max-width: 576px) {
+  .columns.is-multiline.is-justify-center {
+    justify-content: center;
+  }
+}

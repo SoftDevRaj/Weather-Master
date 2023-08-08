@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Weather Master</title>
 </head>
 
 <body>
+    <body style="background-image: url(./images/sky.png); background-repeat: no-repeat; background-size: cover;">
+
     <div class="container is-rounded has-text-centered custom-font">
-        <p class="is-size-1 has-background-info is-bold has-text-white is-align-items-center m-5">Weather Dashboard</p>
+        <p class="is-size-1 is-bold has-text-white is-align-items-center m-5">Weather Dashboard</p>
         <button onclick="playAudio()">Play Audio</button><br><br>
 
         <!-- Search Bar & Button -->
@@ -51,7 +53,7 @@
 
     <!-- Current Weather Display -->
     <div class="container is-rounded has-text-centered custom-font">
-        <h1 class="is-size-1 has-background-info is-bold has-text-white is-align-items-center m-5">Current Weather</h1>
+        <h1 class="is-size-1 is-bold has-text-white is-align-items-center m-5">Current Weather</h1>
         <br>
         <div class="card" id="currentWeather">
             <div class="card-content">
@@ -61,17 +63,15 @@
     </div><br>
 
     <!-- 5-day Forecast Display -->
-    <div class="container is-rounded has-text-centered custom-font">
-        <h1 class="is-size-1 has-background-info is-bold has-text-white is-align-items-center m-5">5-Day Forecast</h1>
-        <br>
-        <div class="columns m-5" id="forecast">
-            <div class="card-content">
-                <!-- JavaScript will insert forecast cards here -->
-            </div>
+    <div class="container has-text-centered">
+        <h1 class="title is-bold has-text-white m-5 custom-font">5-Day Forecast</h1>
+        <div class="columns is-centered is-multiline is-justify-space-between is-justify-space-around is-justify-center m-5"
+            id="forecast">
+            <!-- JavaScript will insert forecast cards here -->
         </div>
-    </div><br>
+    </div>
 
-    <script src="./JS/script.js"></script>
+    <script src="./js/script.js"></script>
 
     <script>
         // Path to audio file.
