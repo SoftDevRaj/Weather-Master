@@ -10,10 +10,36 @@
 </head>
 
 <body>
-  <div class="container is-rounded has-text-centered custom-font">
-    <p class="is-size-1 is-bold has-text-info is-align-items-center m-5">Weather Dashboard</p>
-    <button onclick="playAudio()">Play Audio</button>
-  </div>
+    <div class="container is-rounded has-text-centered custom-font">
+        <p class="is-size-1 has-background-info is-bold has-text-white is-align-items-center m-5">Weather Dashboard</p>
+        <button onclick="playAudio()">Play Audio</button><br><br>
+
+        <!-- Search Bar & Button -->
+    <div class="field has-addons m-5">
+        <div class="control is-expanded"> <!-- is-expanded ensures full width -->
+            <!-- Input for city name -->
+            <input class="input" type="text" placeholder="Enter city name" id="cityInput">
+        </div>
+        <div class="control">
+            <!-- Search button -->
+            <button class="button is-info">Search</button>
+        </div>
+    </div>
+
+    <!-- Buttons for Top 10 US Cities -->
+    <div class="m-5">
+        <button class="button m-2 is-rounded is-info" onclick="fetchWeather('Manhattan')">Manhattan</button>
+        <button class="button m-2 is-rounded is-info" onclick="fetchWeather('Los Angeles')">Los Angeles</button>
+        <button class="button m-2 is-rounded is-info" onclick="fetchWeather('Chicago')">Chicago</button>
+        <button class="button m-2 is-rounded is-info" onclick="fetchWeather('Houston')">Houston</button>
+        <button class="button m-2 is-rounded is-info" onclick="fetchWeather('Phoenix')">Phoenix</button>
+        <button class="button m-2 is-rounded is-info" onclick="fetchWeather('Philadelphia')">Philadelphia</button>
+        <button class="button m-2 is-rounded is-info" onclick="fetchWeather('San Antonio')">San Antonio</button>
+        <button class="button m-2 is-rounded is-info" onclick="fetchWeather('San Diego')">San Diego</button>
+        <button class="button m-2 is-rounded is-info" onclick="fetchWeather('Dallas')">Dallas</button>
+        <button class="button m-2 is-rounded is-info" onclick="fetchWeather('San Jose')">San Jose</button>
+    </div>
+</div>
     
 </body>
 </html>
